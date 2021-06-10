@@ -16,7 +16,7 @@ from utils.general import colorstr, xywh2xyxy, check_dataset, check_file
 #     import wandb
 #     from wandb import init, finish
 # except ImportError:
-    wandb = None
+wandb = None
 
 WANDB_ARTIFACT_PREFIX = 'wandb-artifact://'
 
