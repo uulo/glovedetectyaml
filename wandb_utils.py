@@ -12,11 +12,13 @@ from utils.datasets import LoadImagesAndLabels
 from utils.datasets import img2label_paths
 from utils.general import colorstr, xywh2xyxy, check_dataset, check_file
 
-# try:
-#     import wandb
-#     from wandb import init, finish
-# except ImportError:
-wandb = None
+try:
+    import wandb
+    from wandb import init, finish
+except ImportError:
+    wandb = None
+
+wandb = None    
 
 WANDB_ARTIFACT_PREFIX = 'wandb-artifact://'
 
